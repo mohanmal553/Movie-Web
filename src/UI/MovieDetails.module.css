@@ -1,0 +1,136 @@
+.div-main {
+    height: 100vh;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    font-weight: 400;
+    background-image: linear-gradient(to right,#273038,#4e5c6a);;
+}
+.div-body{
+    height: 400px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: black 0px 5px 25px;
+    border-radius: 10px;
+    background-color: rgba(220, 237, 251, 0.903);
+    padding-right: 5px;
+}
+.div-card-section {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+}
+
+.div-details-section {
+    height: 100%;
+    width: 60%;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+    padding-left: 8px;
+}
+
+.div-details {
+    width: 100%;
+    height: max-content;
+    font-size: 14px;
+}
+
+.div-details p:nth-child(1) {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #FF00FF;
+}
+
+.div-details p {
+    color: #0000CD;
+    line-height: 0.9;
+    font-weight: 100;
+}
+
+.div-details p font {
+    color: red;
+    font-weight: 500;
+}
+.div-details-section a{
+    text-decoration: none;
+    color:white;
+}
+.div-details-section a p{
+    height:max-content;
+    width: max-content;
+    border-radius: 4px;
+    padding: 3px 11px;
+    background-color: #1ab41a;
+    font-size: 14px;
+}
+.div-poster {
+    height: 100%;
+    width: 100%;
+}
+
+.div-poster img {
+    height: 100%;
+    width: 100%;
+}
+@media(max-width:812px){
+    .div-body{
+        height: 330px;
+        width: 580px;
+        margin: 0px 10px;
+    }
+    .div-details {
+        font-size: 14px;
+    }
+    
+    .div-details p:nth-child(1) {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width:618px){
+    .div-body{
+        height: 270px;
+        width: 500px;
+        margin: 0px 10px;
+        padding-right: 0px;
+    }
+    .div-details {
+        font-size: 14px;
+    }
+    
+    .div-details p:nth-child(1) {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .div-details p{
+        margin-bottom: 5px;
+    }
+    .div-card-section {
+        height: 100%;
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px 0px 0px 10px;
+        overflow: hidden;
+    }
+    
+    .div-details-section {
+        height: 100%;
+        width: 65%;
+        border-radius: 0px 10px 10px 0px;
+        overflow: hidden;
+        padding-left: 8px;
+    }
+}

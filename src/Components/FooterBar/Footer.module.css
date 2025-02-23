@@ -1,0 +1,42 @@
+:root{
+    --footer-body-color: linear-gradient(to right,#273038,#4e5c6a);
+    --footer-text-color: #40E0D0;
+    --copyright:skyblue;
+    --icon:#40E0D0;
+}
+.div-main{
+    height: max-content;
+    width: 100%;
+    margin-top: 30px;
+    background-image: var(--footer-body-color);
+    color: var(--footer-text-color);
+    line-height: 0.8;
+}
+.div-title{
+    font-size: 20px;
+    text-align: center;
+}
+.div-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--copyright);
+}
+.div-social p{
+    width: max-content;
+}
+.div-social p i{
+    margin: 15px 10px;
+    font-size: 15px;
+    color: var(--icon);
+}
+.div-social p i:hover{
+    cursor: pointer;
+}
+.div-copyright{
+    text-align: center;
+    color: var(--copyright);
+    font-size: 14px;
+    font-weight: 200;
+    padding-bottom: 20px;
+}

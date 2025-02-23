@@ -1,0 +1,94 @@
+.div-main{
+    height: 100vh;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: -30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(to right,#273038,#4e5c6a);
+}
+.div-title{
+    margin-top: 60px;
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.div-title i{
+    color:red;
+}
+.div-form{
+    height: max-content;
+    width: 40%;
+    position: relative;
+    top:30px;
+}
+.input-text{
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    border:none;
+    outline: none;
+    background-color: rgb(218, 235, 249);
+    color: rgba(0, 0, 0, 0.748);
+    border:2px solid black;
+    border-radius: 10px;
+}
+.icon-user{
+    position: absolute;
+    top:10px;
+    font-size: 15px;
+    left: 15px;
+}
+.icon-email{
+    position: absolute;
+    top:60px;
+    font-size: 15px;
+    left: 15px;
+}
+.input-message{
+    border: none;
+    outline: none;
+    resize: none;
+    background-color: rgb(218, 235, 249);
+    font-size: 16px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 80px;
+    color: rgba(0, 0, 0, 0.748);
+    border:2px solid black;
+    border-radius: 10px;
+}
+.icon-message{
+    position: absolute;
+    top:108px;
+    font-size: 15px;
+    left: 15px;
+    font-size: 15px;
+}
+.btn{
+    font-size: 15px;
+    border-radius: 6px;
+    padding: 2px 12px;
+    float: right;
+    margin-right: 10px;
+    background-color: rgb(200, 8, 8);
+    color: white;
+    outline: none;
+    border:none;
+}
+@media(max-width:1171px){
+    .div-form{
+        width: 50%;
+    }
+}
+@media(max-width:715px){
+    .div-form{
+        width: 75%;
+    }
+}

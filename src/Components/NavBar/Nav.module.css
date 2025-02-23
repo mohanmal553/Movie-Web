@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", serif;
+}
+
+:root {
+    --nav-body-color: linear-gradient(to right,#191f25,#39444f);
+    --nav-body-color-1: linear-gradient(to right,#191f25,#39444f);
+    --nav-text-color: white;
+    --nav-text-color-1: orangered;
+}
+.div-body{
+    background-image: var(--nav-body-color);
+    height: max-content;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top:0px;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.div-main {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.my-name {
+    height: max-content;
+    width: max-content;
+    font-size: 28px;
+    font-weight: bolder;
+    color: var(--nav-text-color-1);
+}
+.my-name:hover{
+    cursor: pointer;
+}
+.nav-item {
+    height: 29px;
+    width: max-content;
+}
+
+.ul {
+    list-style-type: none;
+    height: 29px;
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.ul li {
+    padding-right: 9px;
+    padding-left: 9px;
+    width: 100%;
+    color: var(--nav-text-color);
+}
+
+.ul a {
+    text-decoration: none;
+}
+
+
+.ul li:hover {
+    color: var(--nav-text-color-1);
+}
+
+.hamburger_menu {
+    display: none;
+}
+
+.line {
+    color: var(--nav-text-color);
+    display: none;
+}
+
+.xmark {
+    color: var(--nav-text-color);
+    display: none;
+}
+
+.active li {
+    color: var(--nav-text-color-1);
+}
+
+.inactive li {
+    color: var(--nav-text-color);
+}
+
+@media(max-width:830px) {
+    .my-name {
+        font-size: 26px;
+    }
+
+    .nav-item {
+        height: 25px;
+        width: max-content;
+    }
+
+    .ul {
+        height: 25px;
+        font-size: 17px;
+    }
+}
+
+@media(max-width:550px) {
+    .ul {
+        height: max-content;
+        width: 180px;
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: -180px;
+        height: 100vh;
+        background-image: var(--nav-body-color-1);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .ul li {
+        margin-right: 17px;
+        padding: 6px 0px;
+        text-align: center;
+        width: 180px;
+    }
+    .ul-last{
+        padding-bottom: 200px;
+    }
+    .hamburger_menu {
+        display: block;
+    }
+
+    .line {
+        display: block;
+    }
+}
