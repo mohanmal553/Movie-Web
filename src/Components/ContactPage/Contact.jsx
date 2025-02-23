@@ -5,7 +5,7 @@ export let contactData = async ({ request }) => {
     try {
         let res = await request.formData();
         let data = Object.fromEntries(res);
-        console.log(data);
+        // console.log(data);
         return null;
     }
     catch (err) {
